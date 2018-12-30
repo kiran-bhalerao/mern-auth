@@ -16,8 +16,6 @@ class Admin extends Component {
       }
     })
       .then(res => {
-        console.log(res.data.users)
-
         this.setState({ users: res.data.users })
       })
       .catch(err => {
